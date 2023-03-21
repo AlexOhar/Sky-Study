@@ -1,0 +1,77 @@
+.header {
+    position: relative;
+    margin-top: 38px;
+    height: 51px;
+    background-color: $bg-color;
+    &_logo {
+        grid-column: 1/3;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        align-items: center;
+    }
+    &_menu {
+        grid-column: 4/8;
+        // font-family: 'Avenir Next LT Pro';
+        // font-style: normal;
+        // font-weight: 400;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_account {
+        grid-column: 10/13;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        // font-family: 'Avenir Next LT Pro';
+        // font-style: normal;
+        // font-weight: 400;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &_button {
+        position: relative;
+        color: #ffffff;
+        background: $main-color;
+        border-radius: 36px;
+        width: 180px;
+        height: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 48px;
+        overflow: hidden;
+        transition: .2s all;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 180px;
+            height: 51px;
+            top: -51px;
+            background: #C19CF7;
+            border-radius: 30px;
+            z-index: 2;
+            transition: .2s all;
+        }
+        p {
+            z-index: 3;
+        
+        }
+        &:hover {
+            transition: .2s all;
+            &:before {
+                transition: .2s all;
+                transform: translateY(51px);
+            }
+        }
+    }  
+}

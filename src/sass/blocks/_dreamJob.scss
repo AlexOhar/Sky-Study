@@ -1,0 +1,130 @@
+.dreamJob {
+    padding: 80px 0 80px 0;
+    &_header {
+        grid-column: 1/7;
+        h2 {
+            @include ral-bold;
+            font-size: 70px;
+            line-height: 82px;
+            color: $main-color;
+        }
+    }
+    &_subscribe {
+        grid-column: 8/12;
+        display: flex;
+        align-items: center;
+        p {
+
+            @include ral-midle;
+            font-size: 28px;
+            line-height: 34px;
+            color: $main-color;
+        }
+    }
+    &_mainBlock {
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+    }
+    &_benefits {
+        grid-column: 1/5;
+        margin-top: 130px;
+    }
+    &_item {
+        margin-bottom: 110px;
+        margin-right: 106px;
+        height: 163px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_inform {
+            margin-left: 40px;
+            &-header {
+                @include ral-bold;
+                font-size: 38px;
+                line-height: 45px;
+                color: $main-color;
+            }
+            &-descr {
+                margin-top: 16px;
+                @include ral-midle;
+                font-size: 28px;
+                line-height: 34px;
+                color:  $main-color;
+            }
+        }
+        
+    }
+    .dash {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 174px;
+            left: 38px;
+            width: 2px;
+            height: 89px;
+            display: block;
+            background: url('../icons/dash.png');
+        }
+    }
+    .withoutMargin {
+        margin-bottom: 0;
+    }
+    &_viewer {
+        position: relative;
+        grid-column: 5/13;
+        margin-top: 130px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -4px;
+            display: block;
+            width: 101%;
+            height: 98%;
+            background: #F4FF73;
+            border-radius: 30px;
+            transform: rotate(-3.3deg);
+            z-index: -1;
+        }
+        img {
+            // display: none;
+            width: 100%;
+        }
+        iframe {
+            display: none;
+        }
+        &_experience {
+            position: absolute;
+            top: -73px;
+            right: 44px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #C19CF6;
+            border-radius: 34px;
+            width: 57%;
+            height: 146px;
+            h5 {
+                @include ral-midle;
+                font-size: 80px;
+                line-height: 94px;
+                color: $main-color;
+            }
+            p {
+                @include ral-midle;
+                font-size: 28px;
+                line-height: 34px;
+                color: $main-color;
+            }
+            span {
+                height: 71px;
+                width: 2px;
+                background-color: $main-color;
+            }
+        }
+    }
+
+}

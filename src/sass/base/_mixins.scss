@@ -1,0 +1,15 @@
+@mixin ral-exBold {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+}
+@mixin ral-bold {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+}
+@mixin ral-midle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+}

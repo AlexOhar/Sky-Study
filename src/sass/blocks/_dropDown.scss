@@ -1,0 +1,122 @@
+.dropDown_hamburger {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 20px;
+    top: 0px;
+    background: #353535;
+    border-radius: 14px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    span {
+        position: relative;
+        width: 24px;
+        height: 2px;
+        background-color: $bg-color;
+        transition: .2s all;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 24px;
+            height: 2px;
+            top: -7px;
+            background-color: $bg-color;
+            transition: .2s all;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 24px;
+            height: 2px;
+            top: 7px;
+            background-color: $bg-color;
+            transition: .2s all;
+        }
+    }
+}
+.hamburger_active{
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    right: 20px;
+    top: 40px;
+    background: #353535;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    span {
+        position: relative;
+        width: 24px;
+        height: 2px;
+        background-color: rgba(53, 53, 53, 0);
+        transition: .2s all;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 24px;
+            height: 2px;
+            top: 0px;
+            background-color: $bg-color;
+            transform: rotate(45deg);
+            transition: .2s all;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 24px;
+            height: 2px;
+            top: 0px;
+            background-color: $bg-color;
+            transform: rotate(-45deg);
+            transition: .2s all;
+        }
+    }
+}
+.dropDown {
+    position: fixed;
+    display: block;
+    top: -38px;
+    right: 0;
+    width: 400px;
+    height: 600px;
+    background: rgba(53, 53, 53, 0.8);
+    z-index: 10;
+    transition: .6s all;
+    opacity: 1;
+    &_menu {
+        margin-top: 158px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        a {
+            margin-bottom: 29px;
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: $bg-color;
+        }
+        &-line {
+            display: block;
+            width: 80%;
+            height: 2px;
+            background-color: $bg-color;
+            margin-bottom: 29px;
+        }
+    }
+}
+.close {
+    display: none;
+    opacity: 0.1;
+    transition: .6s all;
+}

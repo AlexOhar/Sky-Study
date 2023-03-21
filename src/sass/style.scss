@@ -1,0 +1,62 @@
+@import 'base/mixins';
+@import 'base/variable';
+@import 'blocks/header';
+@import 'blocks/firstScreen';
+@import 'blocks/startSoon';
+@import 'blocks/dreamJob';
+@import 'blocks/choosingProfession';
+
+@import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.eot');
+    src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Medium.woff') format('woff'),
+    url('../fonts/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.eot');
+    src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-SemiBold.woff') format('woff'),
+    url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Bold.woff') format('woff'),
+    url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+    &:visited {
+        color: $main-color;
+    }
+}
+body {
+    position: relative;
+    background: #F2F2F2;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1720px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(50px, auto)
+}
+
+
+@import 'blocks/dropDown';
+@import 'base/media';

@@ -1,0 +1,1122 @@
+@media (max-width: 1800px) {
+    .container {
+        max-width: 1360px;
+    }
+    .firstScreen {
+        &_learnFor {
+            h1 {
+                font-size: 80px;
+            }
+        }
+        &_go {
+            margin-top: 180px;
+            &-choose {
+                font-size: 24px;
+            }
+        }
+    }
+    .dreamJob {
+        &_header {
+            h2 {
+                font-size: 64px;
+                line-height: 70px;
+            }
+        }
+        &_subscribe {
+            p {
+                font-size: 23px;
+            }
+        }
+        &_item {
+            margin-right: 80px;
+            margin-bottom: 35px;
+            &_inform {
+                &-header {
+                    font-size: 35px;
+                }
+                &-descr {
+                    font-size: 20px;
+                }
+            }
+        }
+        .dash {
+            &::before {
+                top: 150px;
+                height: 70px;
+            }
+        }
+        &_benefits {
+            margin-top: 100px;
+        }
+        &_viewer {
+            margin-top: 100px;
+            &_experience {
+                height: 120px;
+                top: -60px;
+                h5 {
+                    font-size: 75px;
+                }
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .choosingProfession {
+        &_categories {
+            grid-column: 2/12;
+        }
+        &_line {
+            grid-column: 2/12;
+            span {
+                left: 1%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1100px;
+    }
+    .header {
+        &_logo {
+            font-size: 36px;
+        }
+        &_menu {
+            font-size: 18px;
+        }
+        &_account {
+            font-size: 18px;
+        }
+        &_button {
+            margin-left: 30px;
+        }
+    }
+    .firstScreen{
+        padding-top: 50px;
+        &_learnFor {
+            h1 {
+                font-size: 70px;
+                margin-top: 50px;
+            }
+        }
+        &_go {
+            height: 130px;
+            padding-left: 40px;
+            display: flex;
+            margin-top: 130px;
+            &-go {
+                width: 140px;
+                font-size: 40px;
+                &:before {
+                    width: 140px;
+                    height: 130px;
+                    top: -140px;
+                }
+            }
+            &:hover {
+                .firstScreen_go-go {
+                    &:before {
+                        transform: translateY(140px);
+                    }
+                }
+            }
+        }
+        .textBlock {
+            left: -2%;
+        }
+        .active {
+            .textBlock {
+                left: 20%;
+            }
+        }
+        &_slider {
+            grid-template-rows: 550px;
+        }
+        &_slideOne {
+            padding-left: 25px;
+        }
+        &_slideTwo {
+            padding-left: 25px;
+            
+        }
+        &_slideThree {
+            padding-left: 25px;
+        }
+    }
+    .startSoon {
+        &_card {
+            margin-top: 80px;
+            h4 {
+                font-size: 34px;
+                margin-top: 24px;
+            }
+            span {
+                font-size: 24px;
+                margin-top: 4px;
+            }
+        }
+    }
+    .dreamJob {
+        &_header {
+            h2 {
+                font-size: 51px;
+            }
+        }
+        &_subscribe {
+            grid-column: 8/13;
+            p {
+                font-size: 23px;
+            }
+        }
+        &_item {
+            margin-right: 30px;
+            margin-bottom: 25px;
+            height: 150px;
+            &_inform {
+                margin-left: 20px;
+                &-header {
+                    font-size: 32px;
+                }
+                &-descr {
+                    margin-top: 7px;
+                    font-size: 19px;
+                }
+            }
+        }
+        .dash {
+            &::before {
+                top: 140px;
+                height: 70px;
+            }
+        }
+        &_benefits {
+            margin-top: 60px;
+        }
+        &_viewer {
+            margin-top: 100px;
+            &_experience {
+                height: 108px;
+                top: -54px;
+                border-radius: 29px;
+                padding: 0 10px;
+                h5 {
+                    font-size: 55px;
+                }
+                p {
+                    font-size: 21px;
+                    line-height: 28px;
+                }
+                span {
+                    height: 63px;
+                }
+            }
+            &::before {
+                height: 96%;
+            }
+        }
+    }
+    .choosingProfession {
+        &_header {
+            font-size: 51px;
+        }
+        &_categories {
+            grid-column: 1/13;
+        }
+        &_line {
+            grid-column: 1/13;
+            span {
+                left: 0%;
+            }
+        }
+        &_card {
+            margin-top: 80px;
+            &-header {
+                font-size: 31px;
+                margin-top: 24px;
+            }
+            &-descr {
+                font-size: 21px;
+                margin-top: 4px; 
+            }
+        }
+    }
+}
+
+//---------------------------------------------------------1200
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        &_logo {
+            font-size: 30px;
+        }
+        &_menu {
+            font-size: 15px;
+        }
+        &_account {
+            font-size: 15px;
+        }
+    }
+    .firstScreen {
+        padding-bottom: 70px;
+        h1 {
+            font-size: 55px;
+        }
+        .textBlock {
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100px;
+                height: 100px;
+                left: 10px;
+                top: -20px;
+                background: #353535;
+                border-radius: 18px;
+                z-index: 0;
+            }
+        }
+        .slideText {
+            font-size: 33px;
+        }
+        &_slideOne {
+            p {
+                right: 50px;
+            }
+        }
+        &_go {
+            margin-top: 180px;
+            padding-left: 30px;
+            height: 100px;
+            &-choose {
+                font-size: 18px;
+            }
+            &-go {
+                width: 100px;
+                font-size: 33px;
+            }
+        }
+        .textBlock {
+            left: -10%;
+        }
+        .active {
+            .textBlock {
+                bottom: 70px;
+                left: 20%;
+            }
+        }
+    }
+    .startSoon {
+        padding: 70px 0 60px 0;
+        h2 {
+            font-size: 55px;
+        }
+        &_card {
+            margin-top: 80px;
+            h4 {
+                margin-top: 28px;
+                font-size: 33px;
+            }
+            span {
+                margin-top: 12px;
+                font-size: 22px;
+            }
+        }
+    }
+    .dreamJob {
+        padding: 60px 0 60px 0;
+        &_header {
+            h2 {
+                font-size: 45px;
+            }
+        }
+        &_subscribe {
+            grid-column: 8/13;
+            p {
+                font-size: 20px;
+            }
+        }
+        &_item {
+            margin-right: 20px;
+            margin-bottom: 3px;
+            height: 140px;
+            &_inform {
+                margin-left: 20px;
+                &-header {
+                    font-size: 29px;
+                    line-height: 34px;
+                }
+                &-descr {
+                    margin-top: 7px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .dash {
+            &::before {
+                top: 126px;
+                height: 35px;
+            }
+        }
+        &_benefits {
+            margin-top: 60px;
+        }
+        &_viewer {
+            margin-top: 90px;
+            &_experience {
+                height: 90px;
+                top: -45px;
+                border-radius: 29px;
+                padding: 0 10px;
+                h5 {
+                    font-size: 46px;
+                }
+                p {
+                    line-height: 24px;
+                    font-size: 18px;
+                }
+                span {
+                    height: 43px;
+                }
+            }
+            &::before {
+                height: 98%;
+            }
+        }
+    }
+    .choosingProfession {
+        padding: 60px 0;
+        &_header {
+            font-size: 55px;
+        }
+        &_categories {
+            margin-top: 40px;
+        }
+        &_category {
+            font-size: 22px;
+        }
+        &_line {
+            span {
+                left: 2%;
+                width: 165px;
+            }
+        }
+        &_card {
+            margin-top: 60px;
+            padding-right: 20px;
+            &-header {
+                font-size: 25px;
+                margin-top: 15px;
+            }
+            &-descr {
+                font-size: 18px;
+                margin-top: 4px;
+                line-height: 20px; 
+            }
+            &-three {
+                padding-right: 10px;
+            }
+            &-four {
+                padding-right: 0px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+//---------------------------------------------------------992
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &_logo {
+            font-size: 25px;
+        }
+        &_menu {
+            display: none;
+        }
+        &_account {
+            display: none;
+        }
+    }
+    .dropDown_hamburger {
+        display: flex;
+    }
+    .firstScreen {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        &_learnFor {
+            h1 {
+                font-size: 48px;
+                margin-top: 50px;
+            }
+        }
+        &_go {
+            height: 80px;
+            padding-left: 15px;
+            margin-top: 80px;
+            border-radius: 18px;
+            &-go {
+                width: 80px;
+                font-size: 28px;
+                border-radius: 18px;
+                &:before {
+                    display: none;
+                }
+            }
+            &:hover {
+                .firstScreen_go-go {
+                    transition: none;
+                    &:before {
+                        transition: none;
+                    }
+                }
+            }
+        }
+        .slideText {
+            font-size: 26px;
+        }
+        &_slider {
+            grid-template-rows: 390px;
+        }
+        &_slideOne {
+            padding-left: 15px;
+            p {
+                font-size: 28px;
+                line-height: 33px;
+                bottom: 60px;
+            }
+        }
+        &_slideTwo {
+            padding-left: 15px;
+        }
+        &_slideThree {
+            padding-left: 15px;
+        }
+        .textBlock {
+            left: -22%;
+            bottom: 90px;
+            font-size: 28px;
+            &::before {
+                width: 70px;
+                height: 70px;
+                left: 30px;
+                top: -20px;
+            }
+        }
+        .active {
+            .textBlock {
+                bottom: 40px;
+                left: 20%;
+            }
+        }
+    }
+    .startSoon {
+        padding: 50px 0 40px 0;
+        h2 {
+            font-size: 48px;
+        }
+        &_card {
+            margin-top: 50px;
+            h4 {
+                margin-top: 16px;
+                font-size: 28px;
+            }
+            span {
+                margin-top: 0px;
+                font-size: 22px;
+            }
+        }
+    }
+    .dreamJob {
+        padding: 40px 0 40px 0;
+        &_header {
+            h2 {
+                font-size: 33px;
+                line-height: 45px;
+            }
+        }
+        &_subscribe {
+            grid-column: 8/13;
+            p {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+        &_item {
+            margin-right: 10px;
+            margin-bottom: 3px;
+            height: 120px;
+            &_inform {
+                margin-left: 10px;
+                &-header {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                &-descr {
+                    margin-top: 7px;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+            img {
+                width: 65px;
+            }
+        }
+        .dash {
+            &::before {
+                top: 110px;
+                left: 32px;
+                height: 25px;
+            }
+        }
+        &_benefits {
+            margin-top: 40px;
+        }
+        &_viewer {
+            margin-top: 90px;
+            &_experience {
+                height: 80px;
+                top: -40px;
+                border-radius: 29px;
+                padding: 0 10px;
+                h5 {
+                    font-size: 36px;
+                }
+                p {
+                    line-height: 21px;
+                    font-size: 14px;
+                }
+                span {
+                    height: 53px;
+                }
+            }
+            &::before {
+                height: 92%;
+            }
+        }
+    }
+    .choosingProfession {
+        padding: 40px 0;
+        &_header {
+            font-size: 44px;
+        }
+        &_categories {
+            margin-top: 40px;
+        }
+        &_category {
+            font-size: 19px;
+            margin-right: 20px;
+        }
+        &_line {
+            span {
+                left: 0%;
+                width: 144px;
+            }
+        }
+        &_card {
+            margin-top: 60px;
+            padding-right: 20px;
+            &-header {
+                font-size: 25px;
+                margin-top: 15px;
+            }
+            &-descr {
+                font-size: 18px;
+                margin-top: 4px;
+                line-height: 20px; 
+            }
+            &-three {
+                padding-right: 10px;
+            }
+            &-four {
+                padding-right: 0px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+//---------------------------------------------------------768
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+    .header {
+        &_logo {
+            grid-column: 1/4;
+        }
+    }
+    .firstScreen {
+        padding-top: 20px;
+        &_learnFor {
+            h1 {
+                font-size: 36px;
+                margin-top: 35px;
+            }
+        }
+        &_go {
+            height: 70px;
+            width: 210px;
+            padding-left: 10px;
+            display: flex;
+            margin-top: 135px;
+            border-radius: 18px;
+            &-choose {
+                font-size: 14px;
+            }
+            &-go {
+                width: 70px;
+                font-size: 24px;
+                border-radius: 18px;
+                &:before {
+                    display: none;
+                }
+            }  
+        }
+        .slideText {
+            font-size: 20px;
+        }
+        .slider {
+            grid-template-rows: 300px;
+        }
+        &_slideOne {
+            padding-left: 10px;
+            border-radius: 20px;
+            .slideText {
+                font-size: 22px;
+                line-height: 26px;
+                bottom: 75px;
+                left: 60px;
+            }
+        }
+        &_slideTwo {
+            padding-left: 10px;
+            &-2 {
+                border-radius: 20px;
+            }
+        }
+        &_slideThree {
+            padding-left: 10px;
+            &-3 {
+                border-radius: 20px;
+            }
+        }
+        .textBlock {
+            left: -23%;
+            &::before {
+                left: 30px;
+                top: -20px;
+            }
+        }
+        .active {
+            .textBlock {
+                bottom: 40px;
+                left: 15%;
+            }
+        }
+    }
+    .startSoon {
+        &_card {
+            grid-column: 3/11;
+            &_picture {
+                &:hover {
+                    &::before {
+                        transform: none;
+                        transition: .2s all;
+                    }
+                    img {
+                        transform: none;
+                        transition: .2s all;
+                    }
+                }
+            }
+            h4 {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        } 
+    }
+    .dreamJob {
+        padding: 40px 0 60px 0;
+        &_header {
+            grid-column: 3/11;
+            h2 {
+                font-size: 33px;
+                line-height: 45px;
+            }
+        }
+        &_subscribe {
+            margin-top: 35px;
+            grid-column: 3/11;
+            p {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+        &_item {
+            margin-right: 10px;
+            margin-bottom: 107px;
+            height: 120px;
+            &_inform {
+                margin-left: 20px;
+                &-header {
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+                &-descr {
+                    margin-top: 16px;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+            img {
+                width: 65px;
+            }
+        }
+        .dash {
+            &::before {
+                top: 130px;
+                left: 37px;
+                height: 89px;
+            }
+        }
+        &_mainBlock {
+            grid-template-rows: minmax(100px, auto) minmax(100px, auto);
+        }
+        &_benefits {
+            margin-top: 48px;
+            grid-row: 2/3;
+            grid-column: 3/11;
+            img {
+                width: 78px;
+            }
+        }
+        &_viewer {
+            margin-top: 80px;
+            grid-row: 1/2;
+            grid-column: 3/11;
+            &_experience {
+                height: 80px;
+                top: -40px;
+                border-radius: 16px;
+                padding-left: 20px;
+                overflow: hidden;
+                justify-content: start;
+                h5 {
+                    font-size: 40px;
+                    line-height: 47px;
+                }
+                p {
+                    margin-left: 10px;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                span {
+                    height: 53px;
+                }
+                .courses {
+                    margin-left: 20px;
+                }
+            }
+            &::before {
+                height: 92%;
+            }
+        }
+    }
+    .choosingProfession {
+        padding: 40px 0;
+        &_header {
+            // padding-right: 20px;
+            font-size: 40px;
+            line-height: 45px;
+            text-align: center;
+            grid-column: 3/11;
+        }
+        &_categories {
+            display: none;
+        }
+        &_line {
+            display: none;
+        }
+        &_card {
+            grid-column: 3/11;
+            padding: 0;
+            &-header {
+                font-size: 32px;
+                line-height: 38px;
+                margin-top: 32px;
+            }
+            &-descr {
+                font-size: 24px;
+                line-height: 29px;
+                margin-top: 16px;
+            }
+            &-two {
+                margin-top: 40px;
+            }
+            &-three {
+                margin-top: 40px;
+            }
+            &-four {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+//------------------------------------------------------------576
+@media (max-width: 576px) {
+    body {
+        width: 100vw;
+    }
+    .dropDown {
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        transition: .3s all;
+        &_hamburger {
+            right: 10px;
+            &_active {
+                right: 10px;
+            }
+        }
+    }
+    .container {
+        max-width: 100%;
+        // overflow: hidden;
+    }
+    .header {
+        &_logo {
+            font-size: 28px;
+            width: 200px;
+        }
+    }
+    .firstScreen {
+        padding-top: 200px;
+        &_learnFor {
+            left: 0;
+            width: 100%;
+            grid-column: 1/13;
+            h1 {
+                font-size: 50px;
+                margin-top: -185px;
+                width: 310px;
+            }
+        }
+        &_go {
+            height: 70px;
+            width: 100%;
+            padding-left: 15px;
+            display: flex;
+            margin-top: 360px;
+            border-radius: 18px;
+            &-choose {
+                font-size: 18px;
+                line-height: 21px;
+            }
+            &-go {
+                width: 70px;
+                font-size: 28px;
+                border-radius: 18px;
+            }
+        }
+        .textBlock {
+            width: 45px;
+            left: 50px;
+            bottom: 40px;
+            &::before {
+                left: 30px;
+                top: -20px;
+            }
+        }
+        .slider-step2 {
+            transition: none;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .slider-step3 {
+            transition: none;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &_slider {
+            margin-top: -40px;
+            grid-column: 1/13;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 300px;
+            overflow: hidden;
+        }
+        &_slideOne {
+            padding-left: 10px;
+            .slideText {
+                font-size: 22px;
+                line-height: 26px;
+                bottom: 35px;
+                left: 10px;
+            }
+            p {
+                display: block;
+            }
+        }
+        &_slideTwo {
+            padding-left: 10px;
+        }
+        &_slideThree {
+            padding-left: 10px;
+        }
+        .active {
+            width: auto;
+            transition: none;
+            border-radius: 20px;
+            .rotate {
+                transition: none;
+                transform: rotate(180deg);
+            }
+            .textBlock {
+                width: 45px;
+                left: 65%;
+                bottom: 40px;
+                &::before {
+                    left: 30px;
+                    top: -20px;
+                }
+            }
+            
+        }
+    }
+    .startSoon {
+        .container {
+            // max-width: 100%;
+            gap: 0px;
+        }
+        margin-top: 70px;
+        h2 {
+            margin-top: 24px;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        span {
+            margin-top: 0px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &_card {
+            margin-top: 40px;
+            grid-column: 1/13;
+            &_one {
+                grid-column: 1/13;
+            }
+        }
+    }
+    .dreamJob {
+        padding: 40px 0 60px 0;
+        &_header {
+            grid-column: 1/13;
+            h2 {
+                font-size: 33px;
+                line-height: 45px;
+            }
+        }
+        &_subscribe {
+            margin-top: 35px;
+            grid-column: 1/13;
+            p {
+                font-size: 23px;
+                line-height: 27px;
+            }
+        }
+        &_item {
+            margin-right: 10px;
+            margin-bottom: 107px;
+            height: 120px;
+            &_inform {
+                margin-left: 20px;
+                &-header {
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+                &-descr {
+                    margin-top: 16px;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+            img {
+                width: 65px;
+            }
+        }
+        .dash {
+            &::before {
+                top: 130px;
+                left: 37px;
+                height: 89px;
+            }
+        }
+        &_mainBlock {
+            grid-template-rows: minmax(100px, auto) minmax(100px, auto);
+        }
+        &_benefits {
+            margin-top: 48px;
+            grid-row: 2/3;
+            grid-column: 1/13;
+            img {
+                width: 78px;
+            }
+        }
+        &_viewer {
+            margin-top: 80px;
+            grid-row: 1/2;
+            grid-column: 1/13;
+            &_experience {
+                height: 80px;
+                top: -40px;
+                border-radius: 16px;
+                padding-left: 15px;
+                overflow: hidden;
+                justify-content: start;
+                h5 {
+                    font-size: 38px;
+                    line-height: 47px;
+                }
+                p {
+                    margin-left: 10px;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                span {
+                    height: 53px;
+                }
+                .courses {
+                    margin-left: 20px;
+                }
+            }
+            &::before {
+                height: 92%;
+            }
+        }
+    }
+    .choosingProfession {
+        &_header {
+            font-size: 35px;
+            grid-column: 1/13;
+        }
+        &_categories {
+            display: none;
+        }
+        &_line {
+            display: none;
+        }
+        &_card {
+            grid-column: 1/13;
+            padding: 0;
+            &-header {
+                margin-top: 25px;
+            }
+        }
+    }
+}
