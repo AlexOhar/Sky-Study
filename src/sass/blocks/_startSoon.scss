@@ -37,9 +37,6 @@
             grid-column: 1/5;
             width: 100%;
             z-index: 2;
-            // img {
-            //     width: 100%;
-            // }
         }
         &-overlay {
             width: 100%;
@@ -84,17 +81,11 @@
             grid-column: 5/9;
             width: 100%;
             z-index: 2;
-            // img {
-            //     width: 100%;
-            // }
         }
         &-three {
             grid-column: 9/13;
             width: 100%;
             z-index: 2;
-            // img {
-            //     width: 100%;
-            // }
         }
     }
 }

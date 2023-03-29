@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <title>Sky Study</title>
 </head>
 <body>
     <div class="dropDown_hamburger">
@@ -77,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="startSoon">
+    <section class="startSoon" id="startSoon">
         <div class="container">
             <h2 class="startSoon_header">We will start soon</h2>
             <div class="startSoon_card startSoon_card-one">
@@ -124,14 +125,14 @@
     <section class="dreamJob">
         <div class="container">
             <div class="dreamJob_header">
-                <h2>Get the knowledge<br> you need and get your dream job</h2>
+                <h2>Get the knowledge <span class="dreamJob_subscribe_enter">you need and get</span> your dream job</h2>
             </div>
             <div class="dreamJob_subscribe">
-                <p>The training program is designed in such<br> a way that each student can see his result<br> and his achievements</p>
+                <p>The training program is designed in such a way that each student can see his result and <span>his</span> achievements</p>
             </div>
             <div class="dreamJob_mainBlock">
                 <div class="dreamJob_benefits">
-                    <div class="dreamJob_item dash">
+                    <div class="dreamJob_item dash one">
                         <div>
                             <img src="icons/leadership.png" alt="leadership">
                         </div>
@@ -140,7 +141,7 @@
                             <p class="dreamJob_item_inform-descr">The best teachers from all over the world</p>
                         </div>
                     </div>
-                    <div class="dreamJob_item dash">
+                    <div class="dreamJob_item dash two">
                         <div>
                             <img src="icons/informative.png" alt="informative">
                         </div>
@@ -149,7 +150,7 @@
                             <p class="dreamJob_item_inform-descr">Large selection of courses with an affordable education system</p>
                         </div>
                     </div>
-                    <div class="dreamJob_item withoutMargin">
+                    <div class="dreamJob_item withoutMargin three">
                         <div>
                             <img src="icons/employment.png" alt="employment">
                         </div>
@@ -162,7 +163,9 @@
                 </div>
                 <div class="dreamJob_viewer">
                     <img src="img/dreamJob/workGirl.png" alt="girl work on laptop">
-                    <iframe width="100%" height="500" src="https://assets.mixkit.co/videos/preview/mixkit-woman-working-with-a-laptop-computer-at-the-office-28751-large.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="dreamJob_viewer-video">
+                        <iframe src="https://player.vimeo.com/video/812506355?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;autopause=0&amp;" allowfullscreen></iframe>
+                    </div>
                     <div class="dreamJob_viewer_experience">
                         <h5>10</h5>
                         <p>Years<br> experience</p>
@@ -174,7 +177,7 @@
             </div>
         </div>
     </section>
-    <section class="choosingProfession">
+    <section class="choosingProfession" id="choosingProfession">
         <div class="container">
             <h2 class="choosingProfession_header">Choosing a future profession here</h2>
             <div id="categories" class="choosingProfession_categories">
@@ -187,6 +190,17 @@
             </div>
             <div class="choosingProfession_line">
                 <span class="moveLine"></span>
+            </div>
+            <div class="choosingProfession_mobileCategory">All Categories</div>
+            <div class="choosingProfession_overlay">
+                <div class="choosingProfession_overlay_modal">
+                    <a href="#"><div class="choosingProfession_overlay_modal-category allCategory">All Categories</div></a>
+                    <a href="#"><div class="choosingProfession_overlay_modal-category">Testing</div></a>
+                    <a href="#"><div class="choosingProfession_overlay_modal-category">Programming</div></a>
+                    <a href="#"><div class="choosingProfession_overlay_modal-category">Marketing</div></a>
+                    <a href="#"><div class="choosingProfession_overlay_modal-category">Design</div></a>
+                    <a href="#"><div class="choosingProfession_overlay_modal-category">Management</div></a>
+                </div>
             </div>
             <div class="choosingProfession_card choosingProfession_card-one">
                 <a href="#">
@@ -243,8 +257,103 @@
         </div>
     </section>
     <section class="feedback">
-        
+        <div class="container">
+            <div class="feedback_header">Feedback<br> from our students</div>
+            <div class="feedback_slider">
+                <div class="feedback_card">
+                    <div class="feedback_card-message">A very good informative course, 
+                        an interesting presentation of the course material and a lot of useful information from his own experience.</div>
+                    <div class="feedback_card-person">
+                        <div class="feedback_card-photo">
+                            <img src="img/feedback/Martin.png" alt="client">
+                        </div>
+                        <div class="feedback_card-who">
+                            <h5>Martin Lok</h5>
+                            <span>Back-end</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback_card">
+                    <div class="feedback_card-message">Very informative and useful course! Thank you for the quality training
+                        at a high level. </div>
+                    <div class="feedback_card-person">
+                        <div class="feedback_card-photo">
+                            <img src="img/feedback/Klarisa.png" alt="client">
+                        </div>
+                        <div class="feedback_card-who">
+                            <h5>Klarisa Salman</h5>
+                            <span>Front-end</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback_card">
+                    <div class="feedback_card-message">Half a year has passed after successfully studying at the UX/UI design course, I want to thank the school for excellent communication, quality knowledge</div>
+                    <div class="feedback_card-person">
+                        <div class="feedback_card-photo">
+                            <img src="img/feedback/Sara.png" alt="client">
+                        </div>
+                        <div class="feedback_card-who">
+                            <h5>Sara Dgonatan</h5>
+                            <span>UX/UI design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback_card">
+                    <div class="feedback_card-message">Half a year has passed after successfully studying at the UX/UI design course, I want to thank the school for excellent communication, quality knowledge</div>
+                    <div class="feedback_card-person">
+                        <div class="feedback_card-photo">
+                            <img src="img/feedback/Marcus.png" alt="client">
+                        </div>
+                        <div class="feedback_card-who">
+                            <h5>Marcus Wendy</h5>
+                            <span>Back-end</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback_control">
+                <button type="button" aria-label="Prev" class="control-prev feedback_btn">
+                    <img src="img/feedback/prev.svg" alt="prewArrow">
+                </button>
+                <button type="button" aria-label="Next" class="control-next feedback_btn">
+                    <img src="img/feedback/next.svg" alt="nextArrow">
+                </button>
+            </div>
+        </div>
     </section>
+    <section class="footer">
+        <div class="container">
+            <h2 class="footer_header">Sky Study</h2>
+            <div class="footer_categories">
+                <a href="#startSoon"><p>Start soon</p></a>
+                <a href="#choosingProfession"><p>Courses</p></a>
+                <a href="#"><p>About us</p></a>
+                <a href="#"><p>Customer</p></a>
+            </div>
+            <div class="footer_subscribe" id="footer">
+                <div class="footer_subscribe-header">Subscribe not to miss</div>
+                <form class="footer_subscribe-form form" id="subscribe-form" action="#">
+                    <input class="footer_subscribe-email" required type="email" placeholder="Your e-mail" name="email">
+                    <button class="footer_subscribe-btn submit"><span>Go</span></button>
+                </form>
+            </div>
+            <span class="footer_line"></span>
+            <div class="footer_underLine">
+                <p>© 2022 Sky Study. All rights reserved.</p>
+                <div class="footer_social">
+                    <a href="#"><img src="img/footer/Instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="img/footer/Behance.svg" alt="behance"></a>
+                    <a href="#"><img src="img/footer/Telegram.svg" alt="telegram"></a>
+                    <a href="#"><img src="img/footer/Dribbble.svg" alt="dribble"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
 </body>
 </html>

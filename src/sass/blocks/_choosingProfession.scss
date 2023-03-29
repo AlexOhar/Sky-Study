@@ -1,5 +1,9 @@
 .choosingProfession {
+    position: relative;
     padding: 80px 0;
+    .container {
+        overflow-y: hidden;
+    }
     &_header {
         grid-column: 1/13;
         @include ral-bold;
@@ -37,6 +41,67 @@
     &_category {
         width: 100%;
         margin-right: 40px;
+    }
+    &_mobileCategory {
+        display: none;
+        grid-column: 1/13;
+        padding-left: 10px;
+        @include ral-midle;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 30px;
+        color: $main-color;
+        text-decoration: underline #C19CF7;
+        cursor: pointer;
+    }
+    &_overlay {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#3a3b349e;
+        transition: .3s all;
+        opacity: 0;
+        z-index: 4;
+        &_modal {
+            position: fixed;
+            display: none;
+            padding-top: 70px;
+            width: 100%;
+            height: 65%;
+            z-index: 5;
+            left: 0;
+            transform: translateX(-100%);
+            transition: .3s all;
+            top: 160px;
+            background-color: #ffffff;
+            border-radius: 24px;
+            &-category  {
+                @include ral-midle;
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 29px;
+                text-align: center;
+                color: $main-color;
+            }
+        }
+    }
+    .allCategory {
+        margin-bottom: 20px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .overlay_active {
+        display: block;
+        opacity: 1;;
+        transition: .3s all;
+    }
+    .modal_active {
+        display: block;
+        transform: translateX(0%);
+        transition: .3s all;
     }
     &_card {
         @include ral-bold;
@@ -89,10 +154,12 @@
             height: 100%;
             border-radius: 24px;
             overflow: hidden;
+            object-fit: cover;
         }
         img {
             transition: .3s all;
             width: 100%;
+            object-fit: cover;
             &:hover {
                 transform: scale(1.1);
                 transition: .3s all;
@@ -102,6 +169,10 @@
             margin-top: 38px;
             font-size: 38px;
             line-height: 45px;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: #C19CF7;
+            }
         }
         &-descr {
             margin-top: 16px;

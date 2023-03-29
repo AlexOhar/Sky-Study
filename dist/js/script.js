@@ -47,12 +47,9 @@ if (screen.width < 993) {
 const wrapper = document.querySelector('.choosingProfession_categories'),
     line = document.querySelector('.moveLine'),
     blockLine = document.querySelector('.choosingProfession_line');
-console.log(wrapper.offsetWidth);
 blockLine.style.width =`${wrapper.offsetWidth}px`; // - wrapper.offsetWidth * 0.33
-console.log(blockLine);
 
 function handleHover(e) {
-  console.log(e.toElement.offsetWidth);
   if (e.toElement.outerText == 'All Categories') {
     if (screen.width > 1800) {
       line.style.left = '2%';
@@ -67,7 +64,6 @@ function handleHover(e) {
       let size = e.toElement.offsetWidth - e.toElement.offsetWidth * 0.1;
       line.style.width = `${size}px`;
     }
-    
   } else if (e.toElement.outerText == 'Testing') {
     line.style.left = '21%';
     let size = e.toElement.offsetWidth - e.toElement.offsetWidth * 0.1;
@@ -113,3 +109,87 @@ function handleOut() {
 wrapper.addEventListener('mouseover', handleHover);
 wrapper.addEventListener('mouseout', handleOut);
 
+if (screen.width > 992) {
+  $('.feedback_slider').not('.slick-initialized').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: $('.control-prev'),
+    nextArrow: $('.control-next'),
+  });
+}
+if (screen.width > 576) {
+  $('.feedback_slider').not('.slick-initialized').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: $('.control-prev'),
+    nextArrow: $('.control-next'),
+  });
+}
+if (screen.width > 319) {
+  $('.feedback_slider').not('.slick-initialized').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows: true,
+    swipe: true,
+    prevArrow: $('.control-prev'),
+    nextArrow: $('.control-next'),
+  });
+}
+
+const mobileCategories = document.querySelector('.choosingProfession_mobileCategory'),
+    modalOverlay = document.querySelector('.choosingProfession_overlay'),
+    mobileModal = document.querySelector('.choosingProfession_overlay_modal');
+
+mobileCategories.addEventListener('click', () => {
+  mobileModal.classList.toggle('modal_active');
+  modalOverlay.classList.toggle('overlay_active');
+});
+modalOverlay.addEventListener('click', () => {
+  mobileModal.classList.toggle('modal_active');
+  modalOverlay.classList.toggle('overlay_active');
+});
+
+// validation form
+const emailArea = document.querySelector('#footer input');
+
+function valideForm(form) {
+  $(form).validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      email: {
+        required: "",
+        email: ""
+      }
+    }
+  });
+}
+valideForm('#footer form');
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  if(!$(this).valid()) {
+    return;
+  }
+  $.ajax({
+    type: "POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function() {
+    $(this).find("input").val("");
+    $('form').trigger('reset');
+  });
+  return false;
+});

@@ -5,6 +5,8 @@
 @import 'blocks/startSoon';
 @import 'blocks/dreamJob';
 @import 'blocks/choosingProfession';
+@import 'blocks/feedback';
+@import 'blocks/footer';
 
 @import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
 @font-face {
@@ -43,6 +45,10 @@ a {
     &:visited {
         color: $main-color;
     }
+    &:-webkit-any-link {
+        color: $main-color;
+        cursor: pointer;
+    }
 }
 body {
     position: relative;
@@ -56,7 +62,6 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: minmax(50px, auto)
 }
-
 
 @import 'blocks/dropDown';
 @import 'base/media';

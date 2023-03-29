@@ -60,6 +60,9 @@
                     font-size: 25px;
                 }
             }
+            &::before {
+                width: 100%;
+            }
         }
     }
     .choosingProfession {
@@ -71,6 +74,24 @@
             span {
                 left: 1%;
             }
+        }
+        &_card {
+            margin-top: 100px;
+            &-header {
+                margin-top: 20px;
+                font-size: 35px;
+                line-height: 36px;
+            }
+        }
+    }
+    .feedback {
+        &_card-message {
+            height: 270px;
+        }
+    }
+    .footer {
+        &_subscribe {
+            grid-column: 9/13;
         }
     }
 }
@@ -149,8 +170,9 @@
         &_card {
             margin-top: 80px;
             h4 {
-                font-size: 34px;
-                margin-top: 24px;
+                line-height: 30px;
+                font-size: 30px;
+                margin-top: 18px;
             }
             span {
                 font-size: 24px;
@@ -168,6 +190,7 @@
             grid-column: 8/13;
             p {
                 font-size: 23px;
+                width: 450px;
             }
         }
         &_item {
@@ -213,7 +236,7 @@
                 }
             }
             &::before {
-                height: 96%;
+                height: 90%;
             }
         }
     }
@@ -233,13 +256,67 @@
         &_card {
             margin-top: 80px;
             &-header {
-                font-size: 31px;
-                margin-top: 24px;
+                font-size: 30px;
+                line-height: 30px;
+                margin-top: 18px;
             }
             &-descr {
                 font-size: 21px;
                 margin-top: 4px; 
             }
+        }
+    }
+    .feedback {
+        &_header {
+            font-size: 51px;
+        }
+        &_slider {
+            margin-top: 60px;
+        }
+        &_card {
+            padding: 38px 28px;
+            &-message {
+                font-size: 22px;
+                height: 240px;
+            }
+            &-who {
+                h5 {
+                    font-size: 22px;
+                }
+                span {
+                    font-size: 18px;
+                }
+            }
+            &-photo {
+                img {
+                    width: 76px;
+                    height: 76px;
+                }
+            }
+        }
+    }
+    .footer {
+        &_header {
+            font-size: 38px;
+        }
+        &_subscribe {
+            &-header {
+                font-size: 30px;
+            }
+            &-email {
+                font-size: 14px;
+                padding-left: 15px;
+            }
+            &-form {
+                margin-top: 20px;
+            }
+        }
+        &_categories {
+            font-size: 22px;
+            row-gap: 0px;
+        }
+        &_line {
+            margin-top: 50px;
         }
     }
 }
@@ -315,14 +392,16 @@
             font-size: 55px;
         }
         &_card {
-            margin-top: 80px;
+            margin-top: 60px;
             h4 {
-                margin-top: 28px;
-                font-size: 33px;
+                margin-top: 15px;
+                font-size: 24px;
+                line-height: 24px;
             }
             span {
-                margin-top: 12px;
-                font-size: 22px;
+                margin-top: 8px;
+                font-size: 18px;
+                line-height: 18px;
             }
         }
     }
@@ -337,6 +416,7 @@
             grid-column: 8/13;
             p {
                 font-size: 20px;
+                width: 395px;
             }
         }
         &_item {
@@ -384,7 +464,7 @@
                 }
             }
             &::before {
-                height: 98%;
+                height: 92%;
             }
         }
     }
@@ -409,13 +489,14 @@
             margin-top: 60px;
             padding-right: 20px;
             &-header {
-                font-size: 25px;
                 margin-top: 15px;
+                font-size: 24px;
+                line-height: 24px;
             }
             &-descr {
+                margin-top: 8px;
                 font-size: 18px;
-                margin-top: 4px;
-                line-height: 20px; 
+                line-height: 18px; 
             }
             &-three {
                 padding-right: 10px;
@@ -424,6 +505,79 @@
                 padding-right: 0px;
                 padding-left: 10px;
             }
+        }
+    }
+    .feedback {
+        padding: 60px 0;
+        &_header {
+            font-size: 55px;
+        }
+        &_slider {
+            margin-top: 40px;
+        }
+        &_control {
+            margin-top: 40px;
+        }
+        &_card {
+            margin: 0 10px;
+            padding: 28px 20px;
+            &-message {
+                font-size: 22px;
+                height: 255px;
+            }
+            &-who {
+                h5 {
+                    font-size: 20px;
+                }
+                span {
+                    font-size: 18px;
+                }
+            }
+            &-photo {
+                img {
+                    width: 76px;
+                    height: 76px;
+                }
+            }
+        }
+    }
+    .footer {
+        padding-top: 60px;
+        &_header {
+            font-size: 32px;
+        }
+        &_categories {
+            font-size: 20px;
+        }
+        &_subscribe {
+            &-header {
+                font-size: 25px;
+            }
+            &-form {
+                height: 80px;
+                margin-top: 15px;
+            }
+            &-email {
+                height: 80px;
+            }
+            &-btn {
+                height: 80px;
+                width: 80px;
+                &::before {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+        &_line {
+            margin-top: 35px;
+        }
+        &_underLine {
+            height: 80px;
+        }
+        &_social {
+            gap: 25px;
+            padding: 0 20px;
         }
     }
 }
@@ -524,12 +678,14 @@
         &_card {
             margin-top: 50px;
             h4 {
-                margin-top: 16px;
-                font-size: 28px;
+                margin-top: 10px;
+                font-size: 20px;
+                line-height: 20px;
             }
             span {
-                margin-top: 0px;
-                font-size: 22px;
+                margin-top: 5px;
+                font-size: 15px;
+                line-height: 15px;
             }
         }
     }
@@ -546,6 +702,7 @@
             p {
                 font-size: 15px;
                 line-height: 25px;
+                width: 295px;
             }
         }
         &_item {
@@ -597,7 +754,7 @@
                 }
             }
             &::before {
-                height: 92%;
+                height: 87%;
             }
         }
     }
@@ -605,9 +762,10 @@
         padding: 40px 0;
         &_header {
             font-size: 44px;
+            line-height: 44px;
         }
         &_categories {
-            margin-top: 40px;
+            margin-top: 30px;
         }
         &_category {
             font-size: 19px;
@@ -620,16 +778,17 @@
             }
         }
         &_card {
-            margin-top: 60px;
+            margin-top: 50px;
             padding-right: 20px;
             &-header {
-                font-size: 25px;
-                margin-top: 15px;
+                margin-top: 10px;
+                font-size: 20px;
+                line-height: 20px;
             }
             &-descr {
-                font-size: 18px;
-                margin-top: 4px;
-                line-height: 20px; 
+                margin-top: 5px;
+                font-size: 15px;
+                line-height: 15px; 
             }
             &-three {
                 padding-right: 10px;
@@ -637,6 +796,89 @@
             &-four {
                 padding-right: 0px;
                 padding-left: 10px;
+            }
+        }
+    }
+    .feedback {
+        padding: 40px 0;
+        &_header {
+            font-size: 44px;
+            line-height: 44px;
+        }
+        &_slider {
+            margin-top: 40px;
+        }
+        &_control {
+            margin-top: 40px;
+        }
+        &_card {
+            padding: 20px 20px;
+            &-message {
+                font-size: 20px;
+                height: 195px;
+            }
+            &-photo {
+                img {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+    }
+    .footer {
+        padding-top: 40px;
+        &_header {
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &_categories {
+            font-size: 16px;
+            line-height: 29px;
+        }
+        &_subscribe {
+            grid-column: 8/13;
+            &-header {
+                font-size: 22px;
+                line-height: 29px;
+            }
+            &-form {
+                margin-top: 25px;
+                height: 70px;
+            }
+            &-email {
+                height: 70px;
+                border-radius: 15px;
+                font-size: 14px;
+                padding-left: 25px;
+            }
+            &-btn {
+                height: 70px;
+                width: 70px;
+                border-radius: 15px;
+                span {
+                    font-size: 30px;
+                }
+                &::before {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 15px;
+                }
+            }
+        }
+        &_line {
+            margin-top: 25px;
+        }
+        &_underLine {
+            height: 60px;
+            p {
+                font-size: 14px;
+            }
+        }
+        &_social {
+            gap: 20px;
+            img {
+                height: 30px;
+                width: 30px;
             }
         }
     }
@@ -726,10 +968,15 @@
         &_card {
             grid-column: 3/11;
             &_picture {
+                height: 339px;
+                &::before {
+                    display: none;
+                }
                 &:hover {
                     &::before {
                         transform: none;
                         transition: .2s all;
+                        display: none;
                     }
                     img {
                         transform: none;
@@ -751,6 +998,12 @@
             h2 {
                 font-size: 33px;
                 line-height: 45px;
+                width: 345px;
+            }
+            &_enter {
+                display: inline;
+                white-space: normal;
+                word-break: break-word;
             }
         }
         &_subscribe {
@@ -759,6 +1012,12 @@
             p {
                 font-size: 18px;
                 line-height: 32px;
+                width: 353px;
+            }
+            &_enter {
+                display: inline;
+                white-space: normal;
+                word-break: break-word;
             }
         }
         &_item {
@@ -823,18 +1082,24 @@
                     height: 53px;
                 }
                 .courses {
+                    display: none;
                     margin-left: 20px;
                 }
             }
+            &-video {
+                display: none;
+            }
+            img {
+                display: block;
+            }
             &::before {
-                height: 92%;
+                height: 102%;
             }
         }
     }
     .choosingProfession {
         padding: 40px 0;
         &_header {
-            // padding-right: 20px;
             font-size: 40px;
             line-height: 45px;
             text-align: center;
@@ -843,30 +1108,144 @@
         &_categories {
             display: none;
         }
+        &_mobileCategory {
+            display: block;
+        }
         &_line {
             display: none;
         }
         &_card {
-            grid-column: 3/11;
+            grid-column: 2/6;
             padding: 0;
+            margin-top: 40px;
+            &-picture {
+                height: 190px;
+            }
             &-header {
-                font-size: 32px;
-                line-height: 38px;
-                margin-top: 32px;
+                font-size: 22px;
+                line-height: 22px;
+                margin-top: 15px;
+                text-align: center;
             }
             &-descr {
-                font-size: 24px;
-                line-height: 29px;
-                margin-top: 16px;
+                font-size: 18px;
+                line-height: 18px;
+                margin-top: 6px;
+                text-align: center;
             }
             &-two {
                 margin-top: 40px;
+                grid-column: 8/12;
             }
             &-three {
                 margin-top: 40px;
+                grid-column: 2/6;
             }
             &-four {
                 margin-top: 40px;
+                grid-column: 8/12;
+            }
+        }
+    }
+    .feedback {
+        padding: 40px 0;
+        overflow-x: hidden;
+        &_header {
+            font-size: 40px;
+            line-height: 47px;
+            br {
+                display: initial;
+            }
+        }
+        &_slider {
+            grid-column: 1/15;
+            margin-top: 40px;
+            overflow-x: hidden;
+            margin-right: -200px;
+        }
+        &_control {
+            margin-top: 0px;
+            display: none;
+        }
+        &_card {
+            padding: 20px 20px;
+            &-message {
+                font-size: 20px;
+                height: 195px;
+            }
+            &-who {
+                h5 {
+                    font-size: 22px;
+                }
+                span {
+                    font-size: 18px;
+                }
+            }
+            &-photo {
+                img {
+                    width: 76px;
+                    height: 76px;
+                }
+            }
+        }
+    }
+    .footer {
+        padding-top: 40px;
+        &_header {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &_categories {
+            font-size: 12px;
+            line-height: 24px;
+        }
+        &_subscribe {
+            grid-column: 8/13;
+            padding: 0;
+            &-header {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            &-form {
+                margin-top: 20px;
+                height: 40px;
+            }
+            &-email {
+                height: 40px;
+                border-radius: 10px;
+                font-size: 12px;
+                padding-left: 15px;
+            }
+            &-btn {
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                span {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                &::before {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        &_line {
+            margin-top: 25px;
+            height: 1px;
+        }
+        &_underLine {
+            height: 60px;
+            p {
+                font-size: 12px;
+            }
+        }
+        &_social {
+            gap: 20px;
+            img {
+                height: 30px;
+                width: 30px;
             }
         }
     }
@@ -890,7 +1269,6 @@
     }
     .container {
         max-width: 100%;
-        // overflow: hidden;
     }
     .header {
         &_logo {
@@ -991,25 +1369,32 @@
     }
     .startSoon {
         .container {
-            // max-width: 100%;
             gap: 0px;
         }
         margin-top: 70px;
         h2 {
-            margin-top: 24px;
-            font-size: 32px;
-            line-height: 38px;
+            margin-top: 7px;
+            font-size: 33px;
+            line-height: 45px;
         }
         span {
-            margin-top: 0px;
-            font-size: 24px;
-            line-height: 29px;
+            margin-top: 7px;
+            font-size: 16px;
+            line-height: 16px;
         }
         &_card {
             margin-top: 40px;
             grid-column: 1/13;
-            &_one {
-                grid-column: 1/13;
+            &_picture {
+                height: 275px; 
+            }
+            &-two {
+                img {
+                    margin-top: -60px;
+                }
+            }
+            h4 {
+                margin-top: 20px;
             }
         }
     }
@@ -1023,27 +1408,47 @@
             }
         }
         &_subscribe {
-            margin-top: 35px;
+            margin-top: 30px;
             grid-column: 1/13;
             p {
-                font-size: 23px;
+                font-size: 17px;
                 line-height: 27px;
+                width: 300px;
+                span {
+                    display: none;
+                }
+            }
+        }
+        .one {
+            p {
+                font-size: 16px;
+            }
+        }
+        .two {
+            p {
+                font-size: 15px;
+            }
+        }
+        .three {
+            p {
+                font-size: 16px;
             }
         }
         &_item {
             margin-right: 10px;
-            margin-bottom: 107px;
+            margin-bottom: 80px;
             height: 120px;
+            justify-content: initial;
             &_inform {
                 margin-left: 20px;
                 &-header {
-                    font-size: 32px;
-                    line-height: 38px;
+                    font-size: 25px;
+                    line-height: 27px;
                 }
                 &-descr {
                     margin-top: 16px;
-                    font-size: 24px;
-                    line-height: 29px;
+                    font-size: 18px;
+                    line-height: 25px;
                 }
             }
             img {
@@ -1052,9 +1457,9 @@
         }
         .dash {
             &::before {
-                top: 130px;
+                top: 125px;
                 left: 37px;
-                height: 89px;
+                height: 71px;
             }
         }
         &_mainBlock {
@@ -1091,12 +1496,6 @@
                 span {
                     height: 53px;
                 }
-                .courses {
-                    margin-left: 20px;
-                }
-            }
-            &::before {
-                height: 92%;
             }
         }
     }
@@ -1108,15 +1507,159 @@
         &_categories {
             display: none;
         }
+        &_mobileCategory {
+            display: block;
+        }
         &_line {
             display: none;
         }
         &_card {
-            grid-column: 1/13;
-            padding: 0;
-            &-header {
-                margin-top: 25px;
+            grid-column: 1/7;
+            padding: 0 10px;
+            margin-top: 20px;
+            border-radius: 0px;
+            &-picture {
+                height: 190px;
+                &::before {
+                    height: 74%;
+                    border-radius: 30px;
+                }
             }
+            &-overlay {
+                border-radius: 0px;
+            }
+            img {
+                height: 74%;
+                border-radius: 15px;
+            }
+            &-header {
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: -40px;
+                text-align: center;
+            }
+            &-descr {
+                font-size: 14px;
+                line-height: 14px;
+                margin-top: 5px;
+                text-align: center;
+            }
+            &-two {
+                margin-top: 20px;
+                grid-column: 7/13;
+            }
+            &-three {
+                margin-top: 40px;
+                grid-column: 1/7;
+            }
+            &-four {
+                margin-top: 40px;
+                grid-column: 7/13;
+            }
+        }
+    }
+    .feedback {
+        padding: 30px 0;
+        overflow-x: hidden;
+        &_header {
+            font-size: 33px;
+            line-height: 40px;
+            br {
+                display: initial;
+            }
+        }
+        &_slider {
+            margin-top: 40px;
+            overflow-x: hidden;
+            margin-right: -150px;
+        }
+        &_control {
+            margin-top: 0px;
+            display: none;
+        }
+        &_card {
+            padding: 15px 15px;
+            &-message {
+                font-size: 17px;
+                line-height: 22px;
+                height: 170px;
+            }
+            &-photo {
+                margin-right: 10px;
+            }
+            &-who {
+                h5 {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                span {
+                    font-size: 13px;
+                    line-height: 15px;
+                }
+            }
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    .footer {
+        padding-top: 30px;
+        &_header {
+            grid-column: 1/13;
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &_categories {
+            margin-top: 5px;
+            grid-column: 1/13;
+            font-size: 18px;
+            line-height: 29px;
+            row-gap: 15px;
+        }
+        &_subscribe {
+            grid-column: 1/13;
+            margin-top: 18px;
+            &-header {
+                font-size: 28px;
+                line-height: 33px;
+            }
+            &-form {
+                margin-top: 24px;
+                height: 50px;
+            }
+            &-email {
+                height: 50px;
+                border-radius: 10px;
+                font-size: 15px;
+                padding-left: 25px;
+            }
+            &-btn {
+                height: 50px;
+                width: 50px;
+                border-radius: 10px;
+                span {
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                &::before {
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        &_line {
+            margin-top: 32px;
+        }
+        &_underLine {
+            height: 60px;
+            p {
+                font-size: 15px;
+            }
+        }
+        &_social {
+            display: none;
         }
     }
 }

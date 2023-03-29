@@ -1,4 +1,70 @@
 .feedback {
     padding: 80px 0;
-    
+    &_header {
+        grid-column: 1/13;
+        text-align: center;
+        @include ral-bold;
+        font-size: 70px;
+        line-height: 82px;
+        color: $main-color;
+        br {
+            display: none;
+        }
+    }
+    &_slider {
+        margin-top: 80px;
+        grid-column: 1/13;
+        display: flex;
+        justify-content: start;
+    }
+    &_card {
+        background: #FFFFFF;
+        border-radius: 21px;
+        margin: 0 20px;
+        padding: 48px;
+        @include ral-midle;
+        &-message {
+            height: 200px;
+            font-size: 28px;
+            line-height: 34px;
+            @include ral-midle;
+            color: $main-color;
+        }
+        &-person {
+            display: flex;
+            margin-top: 38px;
+            align-items: center;
+        }
+        &-photo {
+            margin-right: 24px;
+        }
+        &-who {
+            h5 {
+                @include ral-bold;
+                font-size: 28px;
+                line-height: 33px;
+                color: $main-color;
+            }
+            span {
+                font-size: 24px;
+                line-height: 29px;
+                color: #C19CF6;
+                margin-top: 8px;
+            }
+        }
+    }
+    &_control {
+        grid-column: 1/13;
+        display: flex;
+        max-width: 114px;
+        gap: 48px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    &_btn {
+        border: none;
+        cursor: pointer;
+        background-color: $bg-color;
+    }
 }
