@@ -224,7 +224,7 @@
         }
         .dash {
             &::before {
-                top: 140px;
+                top: 125px;
                 height: 70px;
             }
         }
@@ -278,11 +278,21 @@
                 font-size: 21px;
                 margin-top: 4px; 
             }
+            &-picture::before {
+                height: 98%;
+                width: 99%;
+            }
+            &-four {
+                padding-right: 15px;
+            }
         }
     }
     .feedback {
         &_header {
             font-size: 51px;
+            br {
+                display: none;
+            }
         }
         &_slider {
             margin-top: 60px;
@@ -426,6 +436,7 @@
         &_header {
             h2 {
                 font-size: 45px;
+                line-height: 60px;
             }
         }
         &_subscribe {
@@ -501,6 +512,9 @@
                 width: 165px;
             }
         }
+        .allCategory {
+            font-size: 22px;
+        }
         &_card {
             margin-top: 60px;
             padding-right: 20px;
@@ -518,7 +532,7 @@
                 padding-right: 10px;
             }
             &-four {
-                padding-right: 0px;
+                padding-right: 9px;
                 padding-left: 10px;
             }
         }
@@ -784,6 +798,9 @@
         &_categories {
             margin-top: 30px;
         }
+        .allCategory {
+            font-size: 19px;
+        }
         &_category {
             font-size: 19px;
             margin-right: 20px;
@@ -791,7 +808,9 @@
         &_line {
             span {
                 left: 0%;
+                margin-top: -15px;
                 width: 144px;
+                height: 3px;
             }
         }
         &_card {
@@ -1125,8 +1144,10 @@
         &_categories {
             display: none;
         }
+    
         &_mobileCategory {
             display: block;
+            grid-column: 2/12;
         }
         &_line {
             display: none;
@@ -1278,8 +1299,10 @@
         top: 0px;
         transition: .3s all;
         &_hamburger {
+            top: 30px;
             right: 10px;
             &_active {
+                top: 30px;
                 right: 10px;
             }
         }
@@ -1416,21 +1439,22 @@
         }
     }
     .dreamJob {
-        padding: 40px 0 60px 0;
+        padding: 40px 0 40px 0;
         &_header {
             grid-column: 1/13;
             h2 {
-                font-size: 33px;
+                font-size: 31px;
                 line-height: 45px;
+                width: 293px;
             }
         }
         &_subscribe {
             margin-top: 30px;
             grid-column: 1/13;
             p {
-                font-size: 17px;
+                font-size: 15px;
                 line-height: 27px;
-                width: 300px;
+                width: 293px;
                 span {
                     display: none;
                 }
@@ -1525,7 +1549,7 @@
             display: none;
         }
         &_mobileCategory {
-            display: block;
+            grid-column: 1/13;
         }
         &_line {
             display: none;

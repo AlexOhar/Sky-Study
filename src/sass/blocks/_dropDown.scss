@@ -1,9 +1,9 @@
 .dropDown_hamburger {
-    position: absolute;
+    position: fixed;
     width: 48px;
     height: 48px;
     right: 20px;
-    top: 0px;
+    top: 40px;
     background: #353535;
     border-radius: 14px;
     display: none;
@@ -92,7 +92,7 @@
     transition: .6s all;
     opacity: 1;
     &_menu {
-        margin-top: 158px;
+        margin-top: 130px;
         height: 300px;
         display: flex;
         align-items: center;

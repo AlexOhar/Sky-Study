@@ -8,7 +8,9 @@ const slider = document.querySelector('.firstScreen_slider'),
     dropDown = document.querySelector('.dropDown'),
     hamburger = document.querySelector('.dropDown_hamburger'),
     hamburgerLink = document.querySelectorAll('.link_hamburger'),
-    hamburgerActive = document.querySelector('.hamburger_active');
+    hamburgerActive = document.querySelector('.hamburger_active'),
+    sendBtn = document.querySelector('.footer_subscribe-btn'),
+    sendBtnBefore = window.getComputedStyle(sendBtn, '::before');
 
 slideSecond.addEventListener('mouseover', () => {
     slideFirst.classList.toggle('active');
@@ -68,22 +70,40 @@ function handleHover(e) {
     line.style.left = '21%';
     let size = e.toElement.offsetWidth - e.toElement.offsetWidth * 0.1;
     line.style.width = `${size}px`;
+    if (screen.width > 1200 && screen.width < 1400) {
+      line.style.left = '20%';
+    }
+    // if (screen.width > 768 && screen.width < 992) {
+    //   line.style.left = '22%';
+    // }
   } else if (e.toElement.outerText == 'Programming') {
     line.style.left = '33%';
     let size = e.toElement.offsetWidth - e.toElement.offsetWidth * 0.1;
     line.style.width = `${size}px`;
+    // if (screen.width > 768 && screen.width < 992) {
+    //   line.style.left = '34%';
+    // }
   } else if (e.toElement.outerText == 'Marketing') {
     line.style.left = '52%';
     let size = e.toElement.offsetWidth - e.toElement.offsetWidth * 0.1;
     line.style.width = `${size}px`;
+    // if (screen.width > 768 && screen.width < 992) {
+    //   line.style.left = '54%';
+    // }
   } else if (e.toElement.outerText == 'Design') {
     line.style.left = '67%';
     let size = e.toElement.offsetWidth - e.toElement.offsetWidth * 0.1;
     line.style.width = `${size}px`;
+    // if (screen.width > 768 && screen.width < 992) {
+    //   line.style.left = '69%';
+    // }
   } else if (e.toElement.outerText == 'Management') {
     line.style.left = '79%';
     let size = e.toElement.offsetWidth - e.toElement.offsetWidth * 0.1;
     line.style.width = `${size}px`;
+    // if (screen.width > 768 && screen.width < 992) {
+    //   line.style.left = '80%';
+    // }
   }
 }
 function handleOut() {
@@ -190,6 +210,7 @@ $('form').submit(function(e) {
   }).done(function() {
     $(this).find("input").val("");
     $('form').trigger('reset');
+    myBtn.style.setProperty('--before-color', '#59ff57');
   });
   return false;
 });
